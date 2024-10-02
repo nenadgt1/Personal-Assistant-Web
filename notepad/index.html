@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notepad & List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <button class="button" id="show-notepad">Notepad</button>
+            <button class="button" id="show-list">List</button>
+        </div>
+
+        <!-- Notepad Section -->
+        <div class="notepad-section" id="notepad-section">
+            <textarea id="note-text" placeholder="Write your note here..."></textarea>
+            <div class="controls">
+                <button class="button" id="save-note">Save Note</button>
+                <button class="button" id="clear-note">Clear Note</button>
+            </div>
+        </div>
+
+        <!-- List Section -->
+        <div class="list-section" id="list-section" style="display: none;">
+            <h2>Saved Notes</h2>
+            <ul id="notes-list">
+                <!-- Placeholder notes will appear here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

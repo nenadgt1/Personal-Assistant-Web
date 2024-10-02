@@ -1,0 +1,94 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6f0ff; /* Light mode background */
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #1a73e8; /* Blueish color for navbar */
+    color: white;
+}
+
+.profile-stats {
+    background-color: #0066cc;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 2rem;
+}
+
+.button-box {
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button-box:hover {
+    background-color: #d9e6f2;
+    transform: scale(1.05);
+}
+
+.icon-placeholder {
+    background-color: #b36b00; /* Placeholder for image */
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.title-placeholder {
+    background-color: #ffeb3b; /* Placeholder for title */
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .navbar {
+    background-color: #333;
+}
+
+.dark-mode .profile-stats {
+    background-color: #1a1a1a;
+}
+
+.dark-mode .button-box {
+    background-color: #333;
+}
+
+.dark-mode .button-box:hover {
+    background-color: #555;
+}
+
+.dark-mode .icon-placeholder {
+    background-color: #ffb74d;
+}
+
+.dark-mode .title-placeholder {
+    background-color: #ffeb3b;
+}

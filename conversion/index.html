@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Conversion Calculator</h1>
+
+        <div class="converter">
+            <!-- Conversion Type Selection -->
+            <label for="conversion-type">Choose a conversion type:</label>
+            <select id="conversion-type">
+                <option value="speed">Speed</option>
+                <option value="length">Length</option>
+                <option value="weight">Weight</option>
+                <option value="temperature">Temperature</option>
+                <option value="currency">Currency</option>
+                <option value="crypto">Cryptocurrency</option>
+            </select>
+
+            <!-- Input Value -->
+            <div>
+                <label for="input-value">Enter value to convert:</label>
+                <input type="number" id="input-value" placeholder="0">
+            </div>
+
+            <!-- Decimal Precision -->
+            <div>
+                <label for="decimal-places">Decimal places:</label>
+                <input type="number" id="decimal-places" value="2" min="0" max="10">
+            </div>
+
+            <!-- Units Selection (Speed, Length, Weight, Temperature) -->
+            <div id="unit-selectors">
+                <label for="from-unit">From:</label>
+                <select id="from-unit"></select>
+
+                <label for="to-unit">To:</label>
+                <select id="to-unit"></select>
+            </div>
+
+            <!-- Convert Button -->
+            <button id="convert-button">Convert</button>
+
+            <!-- Conversion Result -->
+            <div id="conversion-result">Result: </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

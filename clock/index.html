@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock & Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <button class="button" id="show-clock">Clock</button>
+            <button class="button" id="show-stopwatch">Stopwatch</button>
+            <button class="button" id="show-timer">Timer</button>
+            <button class="button" id="show-exact-time">Exact Time</button>
+        </div>
+
+        <!-- CLOCK -->
+        <div class="clock-section" id="clock-section">
+            <h1 id="clock-display">00:00:00</h1>
+        </div>
+
+        <!-- STOPWATCH -->
+        <div class="stopwatch-section" id="stopwatch-section" style="display: none;">
+            <h1 id="stopwatch-display">00:00:00.000</h1>
+            <div class="stopwatch-controls">
+                <button class="button" id="start-stopwatch">Start</button>
+                <button class="button" id="stop-stopwatch">Stop</button>
+                <button class="button" id="reset-stopwatch">Reset</button>
+            </div>
+        </div>
+
+        <!-- TIMER -->
+        <div class="timer-section" id="timer-section" style="display: none;">
+            <input type="number" id="timer-minutes" placeholder="Minutes">
+            <input type="number" id="timer-seconds" placeholder="Seconds">
+            <h1 id="timer-display">00:00</h1>
+            <div class="timer-controls">
+                <button class="button" id="start-timer">Start Timer</button>
+                <button class="button" id="reset-timer">Reset Timer</button>
+            </div>
+        </div>
+
+        <!-- EXACT TIME -->
+        <div class="exact-time-section" id="exact-time-section" style="display: none;">
+            <h1 id="exact-time-display">00:00:00.000</h1>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
